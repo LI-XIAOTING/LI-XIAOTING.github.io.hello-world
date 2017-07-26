@@ -14,16 +14,16 @@
         <h1>
           <div class='header-logo'>
             <a>
-              <img src='image/logo-img.png' alt='ヘッダーロゴ'>
+              <img src='image/logo-img.png' alt='ヘッダーロゴ' class='header-logo-img'>
             </a>
           </div>
         </h1>
-        <div class='header-menu-icon'>
+        <div class='header-menu'>
           <a>
-            <img src='' alt='ヘッダーメニュー'>
+            <img src='' alt='ヘッダーメニュー' class='header-menu-img'>
           </a>
         </div>
-        <ul class='clearfix'>
+        <ul class='nav'>
           <li>
             <a href='#'>
               <img src='#' alt='' width='' height=''>
@@ -59,184 +59,202 @@
         </ul>
       </div>
     </header>
+    <!--headerはここまで-->
     <div class='main'>
-      <div class='top'>
-        <div class='breadcrumb'>
-          <ul class='breadcrumb-list'>
-            <li>
-              <a href='#'>
-                <span>
-                  ホーム
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href='#'>
-                <span>
-                  引越し業者ランキング
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class='top-img'>
-          <img src='' alt='' width='' height=''>
-        </div>
+      <!--breadcrumbはここから-->
+      <div class='breadcrumb'>
+        <ul class='breadcrumb-list'>
+          <li>
+            <a href='#'>
+              <span>
+                ホーム
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              <span>
+                引越し業者ランキング
+              </span>
+            </a>
+          </li>
+        </ul>
       </div>
+      <!--breadcrumbはここまで-->
+      <p>
+        <img src='' alt='' width='' height='' class='full'>
+      </p>
       <!-- タブ切り替えボタン -->
-      <div class='tabcontroller'>
-        <div class='tabs'>
-          <ul class='tabwrap'>
-            <li>
-              <a href=''>
+      <div class='tab-container'>
+        <div class='tab-line-container'>
+          <ul class='tab'>
+            <li class='tab-active'>
+              <a href='' class='tab-anchor'>
                 <p>タブ１</p>
               </a>
             </li>
-            <li>
-              <a href=''>
+            <li class='tab-active'>
+              <a href='' class='tab-anchor'>
                 <p>タブ１</p>
               </a>
             </li>
-            <li>
-              <a href=''>
+            <li class='tab-active'>
+              <a href='' class='tab-anchor'>
                 <p>タブ１</p>
               </a>
             </li>
           </ul>
         </div>
         <!--tab1-->
-        <div class='tab1'>
-          <form method='post' action='#'>
-            <div class='checkbox'>
+        <div class='tab-interest'>
+          <form action='#' name='search' method='post'>
+            <div class='tab-interest-checkbox'>
               <label>
-                <input type='checkbox' name='1' value='カテゴリ1'> カテゴリ1
+                <input type='checkbox' name='1' value='コメディ'> コメディ
               </label>
               <label>
-                <input type='checkbox' name='2' value='カテゴリ2'> カテゴリ2
+                <input type='checkbox' name='2' value='恋爱映画'> 恋爱映画
               </label>
               <label>
-                <input type='checkbox' name='3' value='カテゴリ3'> カテゴリ3
+                <input type='checkbox' name='3' value='アクション映画'> アクション映画
               </label>
               <label>
-                <input type='checkbox' name='4' value='カテゴリ4'> カテゴリ4
+                <input type='checkbox' name='4' value='サスペンス映画'> サスペンス映画
               </label>
             </div>
-            <a class='' href='#'>
-              <p class='more'>
+            <a class='more' href='#'>
+              <p>
                 もっと詳しく
               </p>
             </a>
-            <p class='search_form'>
-              <input type='text' placeholder='検索フォーム'>
-            </p>
-            <div class='tab1_button'>
-              <button type='submit'>
-                検索する
-              </button>
-            </div>
+            <dl class='tab-interest-search'>
+              <dt class='tab-interest-search-text'>
+                <input type='text' name='search' value=''placeholder="検索フォーム"/>
+              </dt>
+              <dd class='tab-interest-search-btn'>
+                <button>
+                  <span>検索する</span>
+                </button>
+              </dd>
+            </dl>
           </form>
         </div>
         <!--tab2-->
-        <div class='tab2'>
-          <ul class='tag2_list'>
-            <li class='tag2_list'>
-              <div class='tag2_list_img'>
-                <img src='#' alt='' width='' height=''>
-              </div>
-              <div class='tag2_list_inner'>
-                <h4 class='tag2_list_subtittle'>タイトル</h4>
-                <p class='tag2_list_text'>テキストテキストテキストテキスト</p>
-              </div>
+        <div>
+          <ul>
+            <li>
+              <a href=''>
+                <div class='media'>
+                  <div class='media-container'>
+                    <div class='media-thumbnail-container'>
+                      <img src='#' alt='' class='media-thumbnail'>
+                    </div>
+                  </div>
+                </div>
+                <div class='media-body'>
+                  <p class='media-title'>タイトル</p>
+                  <p>テキストテキストテキストテキスト</p>
+                </div>
+              </a>
             </li>
-            <li class='tag2_list'>
-              <div class='tag2_list_img'>
-                <img src='#' alt='' width='' height=''>
-              </div>
-              <div class='tag2_list_inner'>
-                <p class='tag2_list_subtittle'>タイトル</p>
-                <p class='tag2_list_text'>テキストテキストテキストテキスト</p>
-              </div>
+            <li>
+              <a href=''>
+                <div class='media'>
+                  <div class='media-container'>
+                    <div class='media-thumbnail-container'>
+                      <img src='#' alt='' class='media-thumbnail'>
+                    </div>
+                  </div>
+                </div>
+                <div class='media-body'>
+                  <p class='media-title'>タイトル</p>
+                  <p>テキストテキストテキストテキスト</p>
+                </div>
+              </a>
             </li>
-            <li class='tag2_list'>
-              <div class='tag2_list_img'>
-                <img src='#' alt='' width='' height=''>
-              </div>
-              <div class='tag2_list_inner'>
-                <p class='tag2_list_subtittle'>タイトル</p>
-                <p class='tag2_list_text'>テキストテキストテキストテキスト</p>
-              </div>
+            <li>
+              <a href=''>
+                <div class='media'>
+                  <div class='media-container'>
+                    <div class='media-thumbnail-container'>
+                      <img src='#' alt='' class='media-thumbnail'>
+                    </div>
+                  </div>
+                </div>
+                <div class='media-body'>
+                  <p class='media-title'>タイトル</p>
+                  <p>テキストテキストテキストテキスト</p>
+                </div>
+              </a>
             </li>
           </ul>
-          <ul class='tag2_list2'>
-            <li>
-              <p　class='tag2_list2_img'>
-                <img src='#' alt='' width='' height=''>
+          <ul class='tab-now-area'>
+            <li class='internal'>
+              <p　class='internal-thumbnail-container'>
+                <img src='#' alt='' width='' height='' class='internal-thumbnail-container-img'>
               </p>
-              <p class='tag2_list2_tittle'>
+              <p class='internal-tittle'>
                 タイトルタイトルタイトル
               </p>
             </li>
-            <li>
-              <p　class='tag2_list2_img'>
-                <img src='#' alt='' width='' height=''>
+            <li class='abroad'>
+              <p　class='abroad-thumbnail-container'>
+                <img src='#' alt='' width='' height='' class='abroad-thumbnail-container-img'>
               </p>
-              <p class='tag2_list2_tittle'>
+              <p class='abroad-tittle'>
                 タイトルタイトルタイトル
               </p>
             </li>
           </ul>
         </div>
         <!--tab3-->
-        <div class='tab3'>
-          <table>
-            <tbody>
-              <tr>
-                <th>選択1</th>
-                <td>
-                  <select class='sel1' name='select1'>
-                    <option value='0'>選択する</option>
-                    <option value='選択肢1'>選択肢のサンプル1</option>
-                    <option value='選択肢2'>選択肢のサンプル2</option>
-                    <option value='選択肢3'>選択肢のサンプル3</option>
-                    <option value='選択肢4'>選択肢のサンプル4</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <th>選択2</th>
-                <td>
-                  <select class='sel2' name='select2'>
-                    <option value='0'>選択する</option>
-                    <option value='選択肢1'>選択肢のサンプル1</option>
-                    <option value='選択肢2'>選択肢のサンプル2</option>
-                    <option value='選択肢3'>選択肢のサンプル3</option>
-                    <option value='選択肢4'>選択肢のサンプル4</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <th>選択3</th>
-                <td>
-                  <select class='sel3' name='select3'>
-                    <option value='0'>選択する</option>
-                    <option value='選択肢1'>選択肢のサンプル1</option>
-                    <option value='選択肢2'>選択肢のサンプル2</option>
-                    <option value='選択肢3'>選択肢のサンプル3</option>
-                    <option value='選択肢4'>選択肢のサンプル4</option>
-                  </select>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class='tab3_button'>
-            <a href='#' class='tab3_button_search'>
-              <p>
-                検索する
-              </p>
-            </a>
+        <div class='tab-ticket'>
+          <div class='tab-ticket-wrap'>
+            <dl class='tab-date'>
+              <dt>日付</dt>
+              <dd>
+                <select class='request-date' name='request-date'>
+                  <option value='0'>選択する</option>
+                  <option value='選択肢1'>7/12</option>
+                  <option value='選択肢2'>7/13</option>
+                  <option value='選択肢3'>7/14</option>
+                  <option value='選択肢4'>7/15</option>
+                </select>
+              </dd>
+            </dl>
+            <dl class='tab-local'>
+              <dt>場所</dt>
+              <dd>
+                <select class='request-local' name='request-local'>
+                  <option value='0'>選択する</option>
+                  <option value='選択肢1'>東京</option>
+                  <option value='選択肢2'>大阪</option>
+                  <option value='選択肢3'>名古屋</option>
+                  <option value='選択肢4'>福岡</option>
+                </select>
+              </dd>
+            </dl>
+            <dl class='tab-person'>
+              <dt>人数</dt>
+              <dd>
+                <select class='request-person' name='request-person'>
+                  <option value='0'>選択する</option>
+                  <option value='選択肢1'>一人</option>
+                  <option value='選択肢2'>二人</option>
+                  <option value='選択肢3'>三人</option>
+                  <option value='選択肢4'>四人</option>
+                </select>
+              </dd>
+            </dl>
           </div>
+          <p class='search-btn'>
+            <a href='#'>
+              検索する
+            </a>
+          </p>
         </div>
       </div>
+      <!--tabここまでです-->
       <div class='tab-under'>
         <ul class='tab-under-box'>
           <li>
@@ -271,8 +289,10 @@
       </div>
       <!-- ランキング -->
       <section class='ranking'>
-        <h2 class='heading-title'>ランキングコンテンツ</h2>
+        <h2 class='heading-title'>
+          ランキングコンテンツ
         <p>2017年7月15日更新</p>
+        </h2>
         <div class='ranking-container'>
           <ol class='ranking-list'>
             <li class='ranking-item'>
@@ -424,7 +444,7 @@
         </a>
       </section>
       <!-- 記事list -->
-      <section class='text'>
+      <section class='media'>
         <h2 class='heading-title'>
           記事リスト
         </h2>
@@ -432,16 +452,14 @@
           <ul>
             <li>
               <a href='#'>
-                <div class='text-container'>
-                  <figure class='text-thumbnail-container'>
-                    <img src='' alt='記事リスト画像'>
+                <div class='media-container'>
+                  <figure class='media-thumbnail-container'>
+                    <img src='' alt='記事リスト画像' class='media-thumbnail'>
                   </figure>
-                  <div class='text-detail'>
-                    <div class='text-title'>
-                      <p>
-                        タイトルタイトルタイトルタイトル
-                      </p>
-                    </div>
+                  <div class='media-body'>
+                    <p class='media-title'>
+                      タイトルタイトルタイトルタイトル
+                    </p>
                     <p>
                       説明テキストテキストテキストテキストテキスト
                     </p>
