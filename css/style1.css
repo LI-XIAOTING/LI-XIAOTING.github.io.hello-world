@@ -1,6 +1,7 @@
   p,
   h1,
   h2,
+  a,
   ul {
     margin: 0;
     padding: 0;
@@ -19,19 +20,9 @@
     vertical-align: middle;
   }
 
-  img, a img {
-    
-  }
-
   .media {
-    margin: 0 10px 40px;
+    margin-bottom: 40px;
     padding: 0;
-  }
-
-  .media li a{
-    display: block;
-    padding: 12px 0;
-    height: auto;
   }
 
   .text-center {
@@ -44,22 +35,37 @@
     border-bottom: solid 1px #222;
   }
 
-  .media-container {
+  .media .media-container {
     display: flex;
     align-items: center;
     border-bottom: solid 1px #222;
-    padding: 10px;
-    margin: 0 6px;
+    background-color: #fdf9d9;
   }
 
-  .media-thumbnail-container {
+  .media .media-thumbnail-container {
     width: 100px;
     float: left;
-    margin-right: 5px;
+    margin: 0 1px;
+    padding: 8px;
   }
 
-  .media-thumbnail{
+  .media .media-thumbnail{
     width: 100px;
+  }
+
+  .media .media-body{
+    padding: 8px;
+  }
+
+  .media .media-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #011b8f;
+  }
+  .media .media-text {
+    font-size: 13px;
+    color: #000;
   }
 
   .footer {
