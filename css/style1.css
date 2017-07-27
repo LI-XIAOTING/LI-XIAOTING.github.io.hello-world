@@ -32,8 +32,7 @@
     border-radius: 5px;
   }
 
-  span {
-    color: #333;
+  .small {
     font-size: 12px;
   }
 /*
@@ -42,7 +41,7 @@
     justify-content: center;
   }
 */
-  .label-author {
+  .text-emphasis {
     font-size: 14px;
     font-style: italic;
   }
