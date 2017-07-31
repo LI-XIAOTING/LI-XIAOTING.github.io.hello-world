@@ -22,7 +22,7 @@
 
   body {
     font-size: 14px;
-    margin: 0px;
+    margin: 0;
   }
 
   .label {
@@ -98,13 +98,23 @@
     color: #000;
   }
 
+  .category-list .category-thumbnail{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  }
+  .category-list{
+    margin: 0 auto;
+    max-width: 350px;
+    text-align: center;
+  }
+
   .footer {
     border-top: 1px solid #9c9c9c;
     background-color: #f2f5f6;
   }
 
   .footer-menu {
-    padding: 10px 10px 20px;
     font-size: 15px;
     overflow: hidden;
     border-bottom: solid 1px #222;
@@ -119,7 +129,6 @@
     border-radius: 4px;
     border: solid 1px #bbb;
     background-color: #dbdbdb;
-
   }
 
   .footer-menu a{
@@ -130,7 +139,6 @@
     font-size: 12px;
     text-align: center;
   }
-
 
   .copyright {
     font-size: 12px;
