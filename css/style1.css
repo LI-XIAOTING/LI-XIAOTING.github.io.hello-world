@@ -93,20 +93,35 @@
     margin-bottom: 2px;
     color: #011b8f;
   }
+  
   .media .media-text {
     font-size: 13px;
     color: #000;
   }
 
-  .category-list .category-thumbnail{
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
+  .category-list .category-thumbnail {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
   }
-  .category-list{
+
+  .category-list .category-thumbnail-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .category-list {
     margin: 0 auto;
-    max-width: 350px;
     text-align: center;
+    padding: 5px 0;
+  }
+
+  .category-list li {
+    display: inline-block;
+    width: 70px;
+    padding: 10px 0;
+    margin: 0 10px;
+
   }
 
   .footer {
