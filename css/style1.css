@@ -7,7 +7,8 @@
     padding: 0;
   }
 
-  ul {
+  ul,
+  li {
     list-style: none;
   }
 
@@ -23,6 +24,9 @@
   body {
     font-size: 14px;
     margin: 0;
+  }
+  .base-background-color {
+    background-color: #fdf9d9;
   }
 
   .label {
@@ -48,6 +52,47 @@
 */
   .text-emphasis {
     font-style: italic;
+  }
+
+  .l-side-layout {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .l-side-layout li {
+    display: inline-block;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .card-container {
+    width: 150px;
+    border-radius: 8px;
+  }
+  .card-img {
+    width: 100%;
+    height: 90px;
+  }
+  .card-title {
+    font-size: 16px;
+    color: #011b8f;
+    font-weight: bold;
+    margin: 2px;
+  }
+  .card-text {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .l-margin-right {
+    margin-right: 20px;
+  }
+
+  .l-bottom {
+    margin-bottom: 30px;
   }
 
   .media {
