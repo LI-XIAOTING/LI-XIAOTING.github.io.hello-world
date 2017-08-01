@@ -25,9 +25,6 @@
     font-size: 14px;
     margin: 0;
   }
-  .base-background-color {
-    background-color: #fdf9d9;
-  }
 
   .label {
     display: inline-block;
@@ -65,33 +62,33 @@
 
   .card li {
     display: inline-block;
-  }
-
-  .card-base {
     background-color: #fff;
     border-radius: 14px;
   }
+
   .card-container {
     width: 150px;
   }
-  .card-thumbnail-container {
-  }
+
   .card-img {
     width: 100%;
     height: 90px;
     border-radius: 14px 14px 0 0;
   }
+
   .card-title {
     font-size: 16px;
     color: #011b8f;
     font-weight: bold;
     margin: 2px;
   }
+
   .card-text {
     display: block;
     text-align: left;
     padding: 0 5px;
   }
+
   .l-right {
     margin-right: 20px;
   }
