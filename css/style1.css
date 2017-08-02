@@ -2,12 +2,14 @@
   h1,
   h2,
   a,
-  ul {
+  ul,
+  ol {
     margin: 0;
     padding: 0;
   }
 
   ul,
+  ol,
   li {
     list-style: none;
   }
@@ -96,6 +98,34 @@
 
   .l-bottom-medium {
     margin-bottom: 30px;
+  }
+
+  .ranking-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ranking-item {
+    width: 50%;  
+  }
+
+  .ranking-item .ranking-container {
+    padding: 12px;
+    border-bottom: solid 1px #222;
+  }
+
+  .ranking-list .l-width {
+    width: 100%;
+  }
+
+  .ranking-item .l-border-right {
+    border-right: solid 1px #222;
+  }
+
+  .ranking-item .ranking-thumbnail {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
   }
 
   .media {
