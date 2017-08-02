@@ -2,18 +2,21 @@
   h1,
   h2,
   a,
-  ul {
+  ul,
+  ol {
     margin: 0;
     padding: 0;
   }
 
   ul,
+  ol,
   li {
     list-style: none;
   }
 
   a {
     text-decoration: none;
+    display: block;
   }
 
   img {
@@ -75,6 +78,7 @@
     width: 100%;
     height: 90px;
     border-radius: 14px 14px 0 0;
+    object-fit: cover;
   }
 
   .card-title {
@@ -98,6 +102,68 @@
     margin-bottom: 30px;
   }
 
+  .ranking-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ranking-item {
+    width: 50%;
+  }
+
+  .ranking-item .ranking-container {
+    padding: 12px;
+    border-bottom: solid 1px #222;
+    display: block;
+    position: relative;
+  }
+
+  .l-full {
+    width: 100%;
+  }
+
+  .line-right-primary {
+    border-right: solid 1px #222;
+  }
+
+  .ranking-item .ranking-thumbnail {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .ranking-item .ranking-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 0;
+    color: #011b8f;
+  }
+
+  .ranking-order {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+  }
+
+  .ranking-order-text {
+    display: inline-block;
+    position: absolute;
+    padding: 6px 0;
+    left: -33px;
+    top: 15px;
+    width: 127px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 14px;
+    background-color: #eb9920;
+    color: #fff;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+  }
+
   .media {
     margin-bottom: 40px;
     padding: 0;
@@ -111,6 +177,14 @@
     text-align: center;
     border-top: solid 4px #222;
     border-bottom: solid 1px #222;
+    padding: 6px 0;
+  }
+
+  .heading-sub-title {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #9c9c9c;
   }
 
   .media .media-container {
