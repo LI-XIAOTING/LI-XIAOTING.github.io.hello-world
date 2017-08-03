@@ -3,9 +3,14 @@
   h2,
   a,
   ul,
-  ol {
+  ol,
+  form {
     margin: 0;
     padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 
   ul,
@@ -56,6 +61,96 @@
 
   .section-base {
     background-color: #fdf9d9;
+  }
+
+  .tab-line-container {
+    padding: 0 12px;
+    border-bottom: 1px solid #222;
+  }
+
+  .tab-line-container .tab {
+    position: relative;
+  }
+
+  .tab {
+    display: flex;
+    width: 100%;
+  }
+
+  .tab li{
+    flex: 1;
+    text-align: center;
+    border-top: 1px solid #222;
+    border-left: 1px solid #222;
+    background-color: #fff;
+    align-items: stretch;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .tab li:last-child {
+    border-right: 1px solid #222;
+  }
+
+  .tab li .tab-anchor {
+    display: flex;
+    padding: 8px 0;
+    color: #011b8f;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .m-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .m-checkbox label {
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .m-checkbox label:nth-child(odd) {
+    border-right: 1px solid #e8e8e8;
+  }
+
+  .m-checkbox label input {
+    font-size: 26px;
+  }
+  .more {
+    float: right;
+    padding: 5px;
+  }
+
+  .search-text {
+    display: block;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    margin: 40px;
+  }
+
+  .search-text input {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #dcdada;
+    border-radius: 6px;
+  }
+
+  .search-btn {
+    display: block;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    margin: 20px 40px;
+  }
+
+  .search-btn button {
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #eb9920;
+    border-radius: 6px;
   }
 
   .card {
