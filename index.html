@@ -86,62 +86,64 @@
         <img src='' alt='' width='' height='' class='full'>
       </p>
       <!-- タブ切り替えボタン -->
-      <div class='tab-container'>
+      <section>
         <div class='tab-line-container'>
           <ul class='tab'>
             <li class='tab-active'>
               <a href='' class='tab-anchor'>
-                <p>タブ１</p>
+                <p>
+                  タブ１
+                </p>
               </a>
             </li>
             <li class='tab-active'>
               <a href='' class='tab-anchor'>
-                <p>タブ１</p>
+                <p>タブ2</p>
               </a>
             </li>
             <li class='tab-active'>
               <a href='' class='tab-anchor'>
-                <p>タブ１</p>
+                <p>タブ3</p>
               </a>
             </li>
           </ul>
         </div>
         <!--tab1-->
-        <div class='tab-interest'>
+        <div class='l-container'>
+          <div class='m-checkbox'>
+            <label>
+              <input type='checkbox' name='1' value='コメディ'> コメディ
+            </label>
+            <label>
+              <input type='checkbox' name='2' value='恋爱映画'> 恋爱映画
+            </label>
+            <label>
+              <input type='checkbox' name='3' value='アクション映画'> アクション映画
+            </label>
+            <label>
+              <input type='checkbox' name='4' value='サスペンス映画'> サスペンス映画
+            </label>
+          </div>
+          <a class='more' href='#'>
+            <p>
+              もっと詳しく
+            </p>
+          </a>
           <form action='#' name='search' method='post'>
-            <div class='tab-interest-checkbox'>
-              <label>
-                <input type='checkbox' name='1' value='コメディ'> コメディ
-              </label>
-              <label>
-                <input type='checkbox' name='2' value='恋爱映画'> 恋爱映画
-              </label>
-              <label>
-                <input type='checkbox' name='3' value='アクション映画'> アクション映画
-              </label>
-              <label>
-                <input type='checkbox' name='4' value='サスペンス映画'> サスペンス映画
-              </label>
-            </div>
-            <a class='more' href='#'>
-              <p>
-                もっと詳しく
-              </p>
-            </a>
-            <dl class='tab-interest-search'>
-              <dt class='tab-interest-search-text'>
-                <input type='text' name='search' value=''placeholder="検索フォーム"/>
-              </dt>
-              <dd class=''>
-                <button class='btn btn-search'>
-                  <span class='btn-text'>検索する</span>
-                </button>
-              </dd>
-            </dl>
+            <dl class='search'>
+            <dt class='search-text'>
+              <input type='text' name='search' value=''placeholder="検索フォーム"/>
+            </dt>
+            <dd class='search-btn'>
+              <button>
+                <span class='btn-text'>検索する</span>
+              </button>
+            </dd>
+          </dl>
           </form>
         </div>
         <!--tab2-->
-        <div>
+        <div class='l-container'>
           <ul>
             <li>
               <a href=''>
@@ -209,7 +211,7 @@
           </ul>
         </div>
         <!--tab3-->
-        <div class='tab-ticket'>
+        <div class='l-container'>
           <div class='tab-ticket-wrap'>
             <dl class='tab-date'>
               <dt>日付</dt>
@@ -254,7 +256,7 @@
             </a>
           </p>
         </div>
-      </div>
+      </section>
       <!--tabここまでです-->
       <!--card-->
       <div>
