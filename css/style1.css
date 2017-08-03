@@ -21,7 +21,6 @@
 
   a {
     text-decoration: none;
-    display: block;
   }
 
   img {
@@ -63,12 +62,12 @@
     background-color: #fdf9d9;
   }
 
-  .tab-line-container {
+  .tab-container {
     padding: 0 12px;
     border-bottom: 1px solid #222;
   }
 
-  .tab-line-container .tab {
+  .tab-container .tab {
     position: relative;
   }
 
@@ -96,41 +95,40 @@
     display: flex;
     padding: 8px 0;
     color: #011b8f;
-    align-items: center;
     justify-content: center;
   }
 
-  .m-checkbox {
+  .l-container {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .m-checkbox label {
+  .l-container .input-container {
     width: 50%;
     padding: 10px;
     border-bottom: 1px solid #e8e8e8;
   }
 
-  .m-checkbox label:nth-child(odd) {
+  .l-container .input-container:nth-child(odd) {
     border-right: 1px solid #e8e8e8;
   }
 
-  .m-checkbox label input {
+  .l-container .input-container .input-container {
     font-size: 26px;
   }
-  .more {
-    float: right;
+  a .text-more {
+    text-align: right;
     padding: 5px;
   }
 
-  .search-text {
+  .l-input {
     display: block;
     border: 1px solid #e8e8e8;
     border-radius: 6px;
-    margin: 40px;
+    margin: 30px 40px;
   }
 
-  .search-text input {
+  .l-input .input-search {
     width: 100%;
     padding: 5px;
     font-size: 16px;
@@ -138,14 +136,7 @@
     border-radius: 6px;
   }
 
-  .search-btn {
-    display: block;
-    border: 1px solid #e8e8e8;
-    border-radius: 6px;
-    margin: 20px 40px;
-  }
-
-  .search-btn button {
+  .l-input .btn-search {
     width: 100%;
     padding: 5px;
     font-size: 20px;
@@ -388,7 +379,7 @@
   .footer-menu a{
     display: block;
     height: 18px;
-    padding: 4px;
+    padding: 1px;
     color: #011b8f;
     font-size: 12px;
     text-align: center;

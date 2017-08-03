@@ -86,8 +86,8 @@
         <img src='' alt='' width='' height='' class='full'>
       </p>
       <!-- タブ切り替えボタン -->
-      <section>
-        <div class='tab-line-container'>
+      <div>
+        <div class='tab-container'>
           <ul class='tab'>
             <li class='tab-active'>
               <a href='' class='tab-anchor'>
@@ -109,84 +109,78 @@
           </ul>
         </div>
         <!--tab1-->
-        <div class='l-container'>
-          <div class='m-checkbox'>
-            <label>
-              <input type='checkbox' name='1' value='コメディ'> コメディ
+        <div>
+          <div class='l-container'>
+            <label class='input-container'>
+              <input class='input-checkbox' type='checkbox' name='1' value='コメディ'> コメディ
             </label>
-            <label>
-              <input type='checkbox' name='2' value='恋爱映画'> 恋爱映画
+            <label class='input-container'>
+              <input class='input-checkbox' type='checkbox' name='2' value='恋爱映画'> 恋爱映画
             </label>
-            <label>
-              <input type='checkbox' name='3' value='アクション映画'> アクション映画
-            </label>
-            <label>
-              <input type='checkbox' name='4' value='サスペンス映画'> サスペンス映画
+            <label class='input-container'>
+              <input class='input-checkbox' type='checkbox' name='3' value='アクション映画'> アクション映画
+            </label class='input-container'>
+            <label class='input-container'>
+              <input class='input-checkbox' type='checkbox' name='4' value='サスペンス映画'> サスペンス映画
             </label>
           </div>
-          <a class='more' href='#'>
-            <p>
+          <a href='#'>
+            <p class='text-more'>
               もっと詳しく
             </p>
           </a>
           <form action='#' name='search' method='post'>
             <dl class='search'>
-            <dt class='search-text'>
-              <input type='text' name='search' value=''placeholder="検索フォーム"/>
-            </dt>
-            <dd class='search-btn'>
-              <button>
-                <span class='btn-text'>検索する</span>
-              </button>
-            </dd>
-          </dl>
+              <dt class='l-input'>
+                <input class='input-search' type='text' name='search' value=''placeholder="検索フォーム"/>
+              </dt>
+              <dd class='l-input'>
+                <button class='btn-search'>
+                  <span class='btn-text'>検索する</span>
+                </button>
+              </dd>
+            </dl>
           </form>
         </div>
         <!--tab2-->
-        <div class='l-container'>
-          <ul>
+        <div>
+          <ul class='media'>
             <li>
               <a href=''>
-                <div class='media'>
-                  <div class='media-container'>
-                    <div class='media-thumbnail-container'>
-                      <img src='#' alt='' class='media-thumbnail'>
-                    </div>
+                <div class='media-container'>
+                  <figure class='media-thumbnail-container'>
+                    <img src='./img/tab2-1.jpg' alt='' class='media-thumbnail'>
+                  </figure>
+                  <div class='media-body'>
+                    <p class='media-title'>タイトル</p>
+                    <p>テキストテキストテキストテキスト</p>
                   </div>
-                </div>
-                <div class='media-body'>
-                  <p class='media-title'>タイトル</p>
-                  <p>テキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
             <li>
               <a href=''>
-                <div class='media'>
-                  <div class='media-container'>
-                    <div class='media-thumbnail-container'>
-                      <img src='#' alt='' class='media-thumbnail'>
-                    </div>
+                <div class='media-container'>
+                  <figure class='media-thumbnail-container'>
+                    <img src='./img/tab2-2.jpg' alt='' class='media-thumbnail'>
+                  </figure>
+                  <div class='media-body'>
+                    <p class='media-title'>タイトル</p>
+                    <p>テキストテキストテキストテキスト</p>
                   </div>
-                </div>
-                <div class='media-body'>
-                  <p class='media-title'>タイトル</p>
-                  <p>テキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
             <li>
               <a href=''>
-                <div class='media'>
-                  <div class='media-container'>
-                    <div class='media-thumbnail-container'>
-                      <img src='#' alt='' class='media-thumbnail'>
-                    </div>
+                <div class='media-container'>
+                  <figure class='media-thumbnail-container'>
+                    <img src='./img/tab2-3.jpg' alt='' class='media-thumbnail'>
+                  </figure>
+                  <div class='media-body'>
+                    <p class='media-title'>タイトル</p>
+                    <p>テキストテキストテキストテキスト</p>
                   </div>
-                </div>
-                <div class='media-body'>
-                  <p class='media-title'>タイトル</p>
-                  <p>テキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
@@ -256,7 +250,7 @@
             </a>
           </p>
         </div>
-      </section>
+      </div>
       <!--tabここまでです-->
       <!--card-->
       <div>
