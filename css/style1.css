@@ -39,22 +39,15 @@
     background-color: #fdf9d9;
   }
 
+  .l-header {
+    display: flex;
+  }
+
   .header-logo {
-    position: absolute;
-    left: 5px;
-    top: 5px;
+  }
+  .header-menu-icon {
   }
 
-  .header .header-menu-icon {
-    position: absolute;
-    right: -10px;
-    top: -10px;
-    height: 50px;
-  }
-
-  .header-menu-icon::before {
-    color: #011b8f;
-  }
 
   .header-logo-img {
     width: 60px;
@@ -63,6 +56,8 @@
   .header-menu-img {
     width: 45px;
   }
+
+
 
   .full {
     width: 100%;
