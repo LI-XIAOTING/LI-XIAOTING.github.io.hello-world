@@ -67,7 +67,17 @@
   }
 
   .nav li {
+    border-right: 1px solid #222;
+    flex: 1;
+    margin: 0 auto;
+  }
 
+  .nav li a {
+    margin: 0 auto;
+  }
+
+  .nav li:last-child {
+    border-right: 0;
   }
 
   .nav-icon {
@@ -118,10 +128,6 @@
 
   .l-bottom {
     border: 2px solid #222;
-  }
-
-  .l-container .tab {
-    position: relative;
   }
 
   .tab {
@@ -176,17 +182,17 @@
     font-size: 15px;
   }
 
-  .input {
+  .search-container {
     display: block;
     border-radius: 6px;
     padding: 5px 15px;
   }
 
-  .l-top-padding {
+  .btn-container {
     padding: 10px 15px;
   }
 
-  .input .input-text {
+  .search-container .input-text {
     width: 100%;
     padding: 7px;
     font-size: 16px;
@@ -194,17 +200,12 @@
     border-radius: 6px;
   }
 
-  .input .btn-search {
+  .search-container .btn-search {
     width: 100%;
     padding: 5px;
     font-size: 20px;
     background-color: #eb9920;
     border-radius: 6px;
-  }
-
-  .media .media-container-circle {
-    margin: 0 auto;
-    align-items: center;
   }
 
   .circle {
@@ -225,11 +226,11 @@
     padding: 10px 0;
     font-size: 16px;
     font-weight: bold;
+    width: 4em;
   }
 
   .form-pulldown-container{
-    width: 260px;
-    margin-left: 35px;
+    flex: 1;
 
   }
   .form-pulldown {
@@ -454,7 +455,7 @@
     padding: 15px 10px;
   }
 
-  .footer-menu li{
+  .footer-menu li {
     width: 32%;
     margin-right: 2px;
     float: left;
@@ -464,7 +465,7 @@
     background-color: #dbdbdb;
   }
 
-  .footer-menu a{
+  .footer-menu a {
     display: block;
     height: 27px;
     padding: 1px;
