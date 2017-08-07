@@ -16,46 +16,46 @@
             <img src='./img/logo.svg' alt='ヘッダーロゴ' class='header-logo-img'>
           </a>
         </div>
-        <div class='header-menu-icon i-menu'>
+        <div class='header-menu-icon'>
           <img src='./img/menu.svg' alt='ヘッダーメニュー' class='header-menu-img'>
         </div>
       </div>
     </header>
         <!--navigation-->
-      <ul class='nav'>
-        <li>
-          <a href='#'>
-            <img src='#' alt='' class='nav-icon'>
-            <p class='nav-title'>
-              カテゴリ
-            </p>
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            <img src='#' alt='' class='nav-icon'>
-            <p class='nav-title'>
-              カテゴリ
-            </p>
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            <img src='#' alt='' class='nav-icon'>
-            <p class='nav-title'>
-              カテゴリ
-            </p>
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            <img src='#' alt='' class='nav-icon'>
-            <p class='nav-title'>
-              カテゴリ
-            </p>
-          </a>
-        </li>
-      </ul>
+    <ul class='nav'>
+      <li>
+        <a href='#'>
+          <img src='./img/star.svg' alt='nav画像' class='nav-icon'>
+          <p class='nav-title'>
+            カテゴリ
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href='#'>
+          <img src='./img/star.svg' alt='' class='nav-icon'>
+          <p class='nav-title'>
+            カテゴリ
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href='#'>
+          <img src='./img/star.svg' alt='' class='nav-icon'>
+          <p class='nav-title'>
+            カテゴリ
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href='#'>
+          <img src='./img/star.svg' alt='' class='nav-icon'>
+          <p class='nav-title'>
+            カテゴリ
+          </p>
+        </a>
+      </li>
+    </ul>
 
     <!--headerはここまで-->
     <div class='main'>
@@ -80,12 +80,12 @@
       </div>
       <!--breadcrumbはここまで-->
       <p>
-        <img src='./img/top-img.jpg' alt='トップ画像' class='full'>
+        <img src='./img/top-img.jpg' alt='トップ画像' class='full top-img'>
       </p>
       <br>
       <!-- タブ切り替えボタン -->
       <div>
-        <div class='l-wide'>
+        <div class='l-container'>
           <ul class='tab'>
             <li class='tab-active'>
               <a href='' class='tab-anchor'>
@@ -107,8 +107,8 @@
           </ul>
         </div>
         <!--tab1-->
-        <div class='section-base l-wide l-bottom'>
-          <div class='l-container'>
+        <div class='section-base l-container l-bottom'>
+          <div class='flex-wrap'>
             <label class='input-container'>
               <input class='input-checkbox' type='checkbox' name='1' value='コメディ'> コメディ
             </label>
@@ -128,23 +128,23 @@
             </p>
           </a>
           <form action='#' name='search' method='post'>
-            <dl class='search'>
-              <dt class='l-input'>
-                <input class='input-search' type='text' name='search' value=''placeholder="検索フォーム"/>
-              </dt>
-              <dd class='l-input-search'>
+            <div class='search'>
+              <div class='input'>
+                <input class='input-text' type='text' name='search' value=''placeholder="検索フォーム"/>
+              </div>
+              <div class='input l-top-padding'>
                 <button class='btn-search'>
                   <span class='btn-text'>検索する</span>
                 </button>
-              </dd>
-            </dl>
+              </div>
+            </div>
           </form>
         </div>
 
         <br>
 
         <!--tab2-->
-        <div class='section-base l-wide l-bottom'>
+        <div class='section-base l-container l-bottom'>
           <ul class='media'>
             <li>
               <a href=''>
@@ -234,7 +234,7 @@
 
         <br>
         <!--tab3-->
-        <div class='section-base l-wide l-bottom'>
+        <div class='section-base l-container l-bottom'>
           <div>
             <dl class='form-menu'>
               <dt class='form-menu-title'>日付</dt>
@@ -283,7 +283,7 @@
       <!--tabここまでです-->
       <br>
       <!--card-->
-      <div class='l-wide'>
+      <div class='l-container'>
         <ul class='card'>
           <li class='l-right-medium l-bottom-medium'>
             <div class='card-container'>
@@ -326,7 +326,7 @@
       <!--cardここまで-->
       <br>
       <!-- ランキング -->
-      <section class='ranking section-base l-wide'>
+      <section class='ranking section-base l-container'>
         <h2 class='heading-title section-base'>
           ランキングコンテンツ
           <span class='heading-sub-title'>2017年7月15日更新</span>
@@ -389,7 +389,7 @@
       </section>
       <br>
       <!-- 特集 -->
-      <section class='section-base l-wide'>
+      <section class='section-base l-container'>
         <h2 class='heading-title section-base'>特集</h2>
         <div>
           <ul class='media'>
@@ -475,7 +475,7 @@
       </section>
       <br>
       <!-- 記事リスト -->
-      <section class='section-base l-wide'>
+      <section class='section-base l-container'>
         <h2 class='heading-title'>
           記事リスト
         </h2>
@@ -545,7 +545,7 @@
       </section>
       <br>
       <!-- カテゴリリスト -->
-      <section class='section-base l-wide'>
+      <section class='section-base l-container'>
         <h2 class='heading-title section-base'>
           カテゴリリスト
         </h2>

@@ -14,7 +14,6 @@
 
   * {
     box-sizing: border-box;
-
   }
 
   ul,
@@ -41,13 +40,18 @@
 
   .l-header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
   }
 
   .header-logo {
   }
-  .header-menu-icon {
-  }
 
+  .header-menu-icon {
+    display: block;
+    float: right;
+  }
 
   .header-logo-img {
     width: 60px;
@@ -57,10 +61,24 @@
     width: 45px;
   }
 
+  .nav {
+    display: flex;
+    border-top: 4px solid #222;
+  }
 
+  .nav li {
+
+  }
+
+  .nav-icon {
+    width: 16px;
+  }
 
   .full {
     width: 100%;
+  }
+
+  .top-img {
     height: 200px;
     object-fit: cover;
   }
@@ -94,7 +112,7 @@
     background-color: #fff;
   }
 
-  .l-wide {
+  .l-container {
     margin: 0 12px;
   }
 
@@ -102,7 +120,7 @@
     border: 2px solid #222;
   }
 
-  .l-wide .tab {
+  .l-container .tab {
     position: relative;
   }
 
@@ -111,7 +129,7 @@
     width: 100%;
   }
 
-  .tab li{
+  .tab li {
     flex: 1;
     text-align: center;
     border-top: 2px solid #222;
@@ -136,42 +154,39 @@
     justify-content: center;
   }
 
-  .l-container {
+  .flex-wrap {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .l-container .input-container {
+  .flex-wrap .input-container {
     width: 50%;
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
   }
 
-  .l-container .input-container:nth-child(odd) {
+  .flex-wrap .input-container:nth-child(odd) {
     border-right: 1px solid #e8e8e8;
   }
 
-  .l-container .input-container .input-container {
-    font-size: 26px;
-  }
-
-  a .text-more {
+  .text-more {
     text-align: right;
     padding: 10px;
     display: block;
     font-size: 15px;
   }
 
-  .l-input {
+  .input {
     display: block;
     border-radius: 6px;
     padding: 5px 15px;
   }
-  .l-input-search {
+
+  .l-top-padding {
     padding: 10px 15px;
   }
 
-  .l-input .input-search {
+  .input .input-text {
     width: 100%;
     padding: 7px;
     font-size: 16px;
@@ -179,7 +194,7 @@
     border-radius: 6px;
   }
 
-  .l-input-search .btn-search {
+  .input .btn-search {
     width: 100%;
     padding: 5px;
     font-size: 20px;
@@ -215,7 +230,6 @@
   .form-pulldown-container{
     width: 260px;
     margin-left: 35px;
-
 
   }
   .form-pulldown {
@@ -358,20 +372,18 @@
     display: flex;
     align-items: center;
     border-bottom: solid 1px #e8e8e8;
-
   }
 
   .media .media-thumbnail-container {
     float: left;
-    margin: 12px;
-    margin-right: 0;
+    margin: 12px 0 12px 12px;
   }
 
-  .media .media-thumbnail{
+  .media .media-thumbnail {
     width: 110px;
   }
 
-  .media .media-body{
+  .media .media-body {
     padding: 10px;
   }
 
