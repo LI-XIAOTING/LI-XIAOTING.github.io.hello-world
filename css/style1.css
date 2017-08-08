@@ -94,20 +94,25 @@
 
   .breadcrumb-list {
     display: flex;
-    padding: 8px;
   }
 
   .breadcrumb-text {
     color: #9a9a9a;
   }
 
-  .breadcrumb-text::before {
+  .breadcrumb-list li {
+    position: relative;
+    padding: 8px;
+  }
+  .breadcrumb-list li::before {
+    position: absolute;
+    vertical-align: middle;
     content: '>';
-    margin-right: 4px;
+    left: -10px;
     color: #9a9a9a;
   }
 
-  .breadcrumb-text::before:first-child {
+  .breadcrumb-list li:first-child::before {
     content: '';
   }
 
