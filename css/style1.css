@@ -101,10 +101,14 @@
     color: #9a9a9a;
   }
 
-  .breadcrumb-before::before {
-    content: "＞";
+  .breadcrumb-text::before {
+    content: '>';
     margin-right: 4px;
     color: #9a9a9a;
+  }
+
+  .breadcrumb-text::before:first-child {
+    content: '';
   }
 
   .full {
@@ -149,7 +153,7 @@
     margin: 0 12px;
   }
 
-  .l-bottom {
+  .panel {
     border: 2px solid #222;
   }
 
@@ -238,18 +242,19 @@
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
+    margin-right: 20px;
   }
 
-  .l-margin {
+  .l-title-margin {
     margin: 0 20px;
   }
 
-  .media-container-icon {
+  .media-container-anchor {
     position: relative;
   }
 
-  .media-container-icon::after {
-    content: "";
+  .media-container-anchor::after {
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
