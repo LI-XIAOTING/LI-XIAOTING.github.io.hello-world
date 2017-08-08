@@ -101,7 +101,7 @@
     color: #9a9a9a;
   }
 
-  .breadcrumb-text::before {
+  .breadcrumb-before::before {
     content: "＞";
     margin-right: 4px;
     color: #9a9a9a;
