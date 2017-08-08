@@ -10,56 +10,53 @@
   <body>
     <!--header-->
     <header>
-      <div class='header'>
-        <h1>
-          <div class='header-logo'>
-            <a>
-              <img src='image/logo-img.png' alt='ヘッダーロゴ' class='header-logo-img'>
-            </a>
-          </div>
-        </h1>
-        <div class='header-menu'>
+      <div class='l-header'>
+        <div class='header-logo'>
           <a>
-            <img src='' alt='ヘッダーメニュー' class='header-menu-img'>
+            <img src='./img/logo.svg' alt='ヘッダーロゴ' class='header-logo-img'>
           </a>
         </div>
-        <!--navigation-->
-        <ul class='nav'>
-          <li>
-            <a href='#'>
-              <img src='#' alt='' class='nav-icon'>
-              <p class='nav-title'>
-                カテゴリ
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <img src='#' alt='' class='nav-icon'>
-              <p class='nav-title'>
-                カテゴリ
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <img src='#' alt='' class='nav-icon'>
-              <p class='nav-title'>
-                カテゴリ
-              </p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <img src='#' alt='' class='nav-icon'>
-              <p class='nav-title'>
-                カテゴリ
-              </p>
-            </a>
-          </li>
-        </ul>
+        <div class='header-menu-icon'>
+          <img src='./img/menu.svg' alt='ヘッダーメニュー' class='header-menu-img'>
+        </div>
       </div>
     </header>
+        <!--navigation-->
+    <ul class='nav'>
+      <li>
+        <a href='#'>
+          <img src='./img/star.svg' alt='nav画像' class='nav-icon'>
+          <p class='nav-title'>
+            ランキング
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href='#'>
+          <img src='./img/star.svg' alt='' class='nav-icon'>
+          <p class='nav-title'>
+            特集
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href='#'>
+          <img src='./img/star.svg' alt='' class='nav-icon'>
+          <p class='nav-title'>
+            記事リスト
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href='#'>
+          <img src='./img/star.svg' alt='' class='nav-icon'>
+          <p class='nav-title'>
+            カテゴリ
+          </p>
+        </a>
+      </li>
+    </ul>
+
     <!--headerはここまで-->
     <div class='main'>
       <!--breadcrumbはここから-->
@@ -67,14 +64,14 @@
         <ul class='breadcrumb-list'>
           <li>
             <a href='#'>
-              <span>
-                ホーム
+              <span  class='breadcrumb-text'>
+                ホーム　
               </span>
             </a>
           </li>
           <li>
             <a href='#'>
-              <span>
+              <span  class='breadcrumb-text'>
                 引越し業者ランキング
               </span>
             </a>
@@ -83,112 +80,138 @@
       </div>
       <!--breadcrumbはここまで-->
       <p>
-        <img src='' alt='' width='' height='' class='full'>
+        <img src='./img/top-img.jpg' alt='トップ画像' class='full top-img'>
       </p>
+      <br>
       <!-- タブ切り替えボタン -->
-      <div class='tab-container'>
-        <div class='tab-line-container'>
+      <div>
+        <div class='l-container'>
           <ul class='tab'>
             <li class='tab-active'>
               <a href='' class='tab-anchor'>
-                <p>タブ１</p>
+                <p>
+                  カテゴリー
+                </p>
               </a>
             </li>
             <li class='tab-active'>
               <a href='' class='tab-anchor'>
-                <p>タブ１</p>
+                <p>上映中</p>
               </a>
             </li>
             <li class='tab-active'>
               <a href='' class='tab-anchor'>
-                <p>タブ１</p>
+                <p>映画館を探す</p>
               </a>
             </li>
           </ul>
         </div>
         <!--tab1-->
-        <div class='tab-interest'>
+        <div class='section-base l-container panel'>
+          <div class='flex-wrap'>
+            <label class='input-container'>
+              <input class='input-checkbox' type='checkbox' name='1' value='コメディ'> コメディ
+            </label>
+            <label class='input-container'>
+              <input class='input-checkbox' type='checkbox' name='2' value='恋爱映画'> 恋爱映画
+            </label>
+            <label class='input-container'>
+              <input class='input-checkbox' type='checkbox' name='3' value='アクション映画'> アクション映画
+            </label class='input-container'>
+            <label class='input-container'>
+              <input class='input-checkbox' type='checkbox' name='4' value='サスペンス映画'> サスペンス映画
+            </label>
+          </div>
+          <a href='#'>
+            <p class='text-more'>
+              もっと詳しく
+            </p>
+          </a>
           <form action='#' name='search' method='post'>
-            <div class='tab-interest-checkbox'>
-              <label>
-                <input type='checkbox' name='1' value='コメディ'> コメディ
-              </label>
-              <label>
-                <input type='checkbox' name='2' value='恋爱映画'> 恋爱映画
-              </label>
-              <label>
-                <input type='checkbox' name='3' value='アクション映画'> アクション映画
-              </label>
-              <label>
-                <input type='checkbox' name='4' value='サスペンス映画'> サスペンス映画
-              </label>
-            </div>
-            <a class='more' href='#'>
-              <p>
-                もっと詳しく
-              </p>
-            </a>
-            <dl class='tab-interest-search'>
-              <dt class='tab-interest-search-text'>
-                <input type='text' name='search' value=''placeholder="検索フォーム"/>
-              </dt>
-              <dd class=''>
-                <button class='btn btn-search'>
+            <div class='search'>
+              <div class='search-container'>
+                <input class='input-text' type='text' name='search' value=''placeholder="検索フォーム"/>
+              </div>
+              <div class='search-container btn-container'>
+                <button class='btn-search'>
                   <span class='btn-text'>検索する</span>
                 </button>
-              </dd>
-            </dl>
+              </div>
+            </div>
           </form>
         </div>
+
+        <br>
+
         <!--tab2-->
-        <div>
-          <ul>
+        <div class='section-base panel l-container'>
+          <ul class='media'>
             <li>
               <a href=''>
-                <div class='media'>
-                  <div class='media-container'>
-                    <div class='media-thumbnail-container'>
-                      <img src='#' alt='' class='media-thumbnail'>
-                    </div>
+                <div class='media-container'>
+                  <figure class='media-thumbnail-container'>
+                    <img src='./img/tab2-1.jpg' alt='' class='media-thumbnail'>
+                  </figure>
+                  <div class='media-body'>
+                    <p class='media-title'>ジョジョの奇妙な冒険</p>
+                    <p>テキストテキストテキストテキスト</p>
                   </div>
-                </div>
-                <div class='media-body'>
-                  <p class='media-title'>タイトル</p>
-                  <p>テキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
             <li>
               <a href=''>
-                <div class='media'>
-                  <div class='media-container'>
-                    <div class='media-thumbnail-container'>
-                      <img src='#' alt='' class='media-thumbnail'>
-                    </div>
+                <div class='media-container'>
+                  <figure class='media-thumbnail-container'>
+                    <img src='./img/tab2-2.jpg' alt='' class='media-thumbnail'>
+                  </figure>
+                  <div class='media-body'>
+                    <p class='media-title'>静かなる復讐</p>
+                    <p>テキストテキストテキストテキスト</p>
                   </div>
                 </div>
-                <div class='media-body'>
-                  <p class='media-title'>タイトル</p>
-                  <p>テキストテキストテキストテキスト</p>
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <div class='media-container'>
+                  <figure class='media-thumbnail-container'>
+                    <img src='./img/tab2-3.jpg' alt='' class='media-thumbnail'>
+                  </figure>
+                  <div class='media-body'>
+                    <p class='media-title'>ボーイ・ミッシング</p>
+                    <p>テキストテキストテキストテキスト</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <div class='media-container media-container-anchor'>
+                  <figure class='media-thumbnail-container'>
+                    <img src='./img/tab2-4.jpg' alt='' class='circle'>
+                  </figure>
+                  <div class='media-body'>
+                    <p class='media-title'>画像で見る映画ニュース</p>
+                  </div>
                 </div>
               </a>
             </li>
             <li>
               <a href=''>
-                <div class='media'>
-                  <div class='media-container'>
-                    <div class='media-thumbnail-container'>
-                      <img src='#' alt='' class='media-thumbnail'>
-                    </div>
+                <div class='media-container media-container-anchor'>
+                  <figure class='media-thumbnail-container'>
+                    <img src='./img/tab2-5.jpg' alt='' class='circle'>
+                  </figure>
+                  <div class='media-body'>
+                    <p class='media-title'>映画評論</p>
                   </div>
-                </div>
-                <div class='media-body'>
-                  <p class='media-title'>タイトル</p>
-                  <p>テキストテキストテキストテキスト</p>
+                  <p class='arrow media-icon'></p>
                 </div>
               </a>
             </li>
           </ul>
+          <!--
           <ul class='tab-now-area'>
             <li class='internal'>
               <p　class='internal-thumbnail-container'>
@@ -207,14 +230,17 @@
               </p>
             </li>
           </ul>
+          -->
         </div>
+
+        <br>
         <!--tab3-->
-        <div class='tab-ticket'>
-          <div class='tab-ticket-wrap'>
-            <dl class='tab-date'>
-              <dt>日付</dt>
-              <dd>
-                <select class='request-date' name='request-date'>
+        <div class='section-base panel l-container'>
+          <div>
+            <dl class='form-menu'>
+              <dt class='form-menu-title'>日付</dt>
+              <dd class='form-pulldown-container'>
+                <select class='form-pulldown' name='request-date'>
                   <option value='0'>選択する</option>
                   <option value='選択肢1'>7/12</option>
                   <option value='選択肢2'>7/13</option>
@@ -223,10 +249,10 @@
                 </select>
               </dd>
             </dl>
-            <dl class='tab-local'>
-              <dt>場所</dt>
-              <dd>
-                <select class='request-local' name='request-local'>
+            <dl class='form-menu'>
+              <dt class='form-menu-title'>場所</dt>
+              <dd class='form-pulldown-container'>
+                <select class='form-pulldown' name='request-local'>
                   <option value='0'>選択する</option>
                   <option value='選択肢1'>東京</option>
                   <option value='選択肢2'>大阪</option>
@@ -235,10 +261,10 @@
                 </select>
               </dd>
             </dl>
-            <dl class='tab-person'>
-              <dt>人数</dt>
-              <dd>
-                <select class='request-person' name='request-person'>
+            <dl class='form-menu'>
+              <dt class='form-menu-title'>人数</dt>
+              <dd class='form-pulldown-container'>
+                <select class='form-pulldown' name='request-person'>
                   <option value='0'>選択する</option>
                   <option value='選択肢1'>一人</option>
                   <option value='選択肢2'>二人</option>
@@ -248,147 +274,128 @@
               </dd>
             </dl>
           </div>
-          <p class='search-btn'>
-            <a href='#'>
-              検索する
-            </a>
-          </p>
+          <div class='search-container btn-container'>
+            <button class='btn-search'>
+              <span class='btn-text'>検索する</span>
+            </button>
+          </div>
         </div>
       </div>
       <!--tabここまでです-->
-      <div class=''>
-        <ul class=''>
-          <li>
-            <div class='card'>
-              <img src='' alt='' class='card-img'>
-              <p>タイトルタイトルタイトル</p>
-              <p>説明テキスト説明テキスト説明テキスト説明テキスト</p>
+      <br>
+      <!--card-->
+      <div class='l-container'>
+        <ul class='card'>
+          <li class='l-right-medium l-bottom-medium'>
+            <div class='card-container'>
+              <div class='card-thumbnail-container'>
+                <img src='./img/card1.jpg' alt='カード画像' class='card-img'>
+              </div>
+              <p class='card-title'>コメディー</p>
+              <p class='card-text'>世界の映画祭で評価されたドキュメンタリー映画の秀作を厳選して日本で上映する流れを作る。</p>
             </div>
           </li>
-          <li>
-            <div class='card'>
-              <img src='' alt='' class='card-img'>
-              <p>タイトルタイトルタイトル</p>
-              <p>説明テキスト説明テキスト説明テキスト説明テキスト</p>
+          <li class='l-bottom-medium'>
+            <div class='card-container'>
+              <div class='card-thumbnail-container'>
+                <img src='./img/card2.jpg' alt='カード画像' class='card-img'>
+              </div>
+              <p class='card-title'>恋愛映画</p>
+              <p class='card-text'>世界の映画祭で評価されたドキュメンタリー映画の秀作を厳選して日本で上映する流れを作る。</p>
             </div>
           </li>
-          <li>
-            <div class='card'>
-              <img src='' alt='' class='card-img'>
-              <p>タイトルタイトルタイトル</p>
-              <p>説明テキスト説明テキスト説明テキスト説明テキスト</p>
+          <li class='l-right-medium l-bottom-medium'>
+            <div class='card-container'>
+              <div class='card-thumbnail-container'>
+                <img src='./img/card3.jpg' alt='カード画像' class='card-img'>
+              </div>
+              <p class='card-title'>アニメーション</p>
+              <p class='card-text'>世界の映画祭で評価されたドキュメンタリー映画の秀作を厳選して日本で上映する流れを作る。</p>
             </div>
           </li>
-          <li>
-            <div class='card'>
-              <img src='' alt='' class='card-img'>
-              <p>タイトルタイトルタイトル</p>
-              <p>説明テキスト説明テキスト説明テキスト説明テキスト</p>
+          <li class='l-bottom-medium'>
+            <div class='card-container'>
+              <div class='card-thumbnail-container'>
+                <img src='./img/card4.jpg' alt='カード画像' class='card-img'>
+              </div>
+              <p class='card-title'>アクション映画</p>
+              <p class='card-text'>世界の映画祭で評価されたドキュメンタリー映画の秀作を厳選して日本で上映する流れを作る。</p>
             </div>
           </li>
         </ul>
       </div>
+      <!--cardここまで-->
+      <br>
       <!-- ランキング -->
-      <section class='ranking'>
-        <h2 class='heading-title'>
+      <section class='ranking section-base l-container'>
+        <h2 class='heading-title section-base'>
           ランキングコンテンツ
-        <p>2017年7月15日更新</p>
+          <span class='heading-sub-title'>2017年7月15日更新</span>
         </h2>
-        <div class='ranking-container'>
-          <ol class='ranking-list'>
-            <li class='ranking-item'>
-              <a href='#' class='ranking-link'>
-                <div class='ranking-order'>
-                  <span>1位</span>
-                </div>
-                <div class='ranking-img'>
-                  <img src='#' alt=''>
-                </div>
-                <div class='ranking-company-name'>
-                  サカイ
-                </div>
-              </a>
-            </li>
-            <li class='ranking-item'>
-              <a href='#' class='ranking-link'>
-                <div class='ranking-order'>
-                  <span>1位</span>
-                </div>
-                <div class='ranking-img'>
-                  <img src='#' alt=''>
-                </div>
-                <div class='ranking-company-name'>
-                  アーク
+          <ol class='ranking-list section-base'>
+            <li class='ranking-item l-full'>
+              <a href='#'>
+                <div class='ranking-container'>
+                  <div class='ranking-order'>
+                    <span class='ranking-order-text'>1位</span>
+                  </div>
+                  <div class='ranking-thumbnail-container'>
+                    <img src='./img/ranking1.jpg' alt='ランキング画像' class='ranking-thumbnail'>
+                  </div>
+                  <div class='ranking-title'>
+                    ビジランテ
+                  </div>
                 </div>
               </a>
             </li>
             <li class='ranking-item'>
-              <a href='#' class='ranking-link'>
-                <div class='ranking-order'>
-                  <span>1位</span>
-                </div>
-                <div class='ranking-img'>
-                  <img src='#' alt=''>
-                </div>
-                <div class='ranking-company-name'>
-                  アリさんマークの引越社
-                </div>
-              </a>
-            </li>
-          </ol>
-          <ol class='ranking-hiddenitem'>
-            <li class='ranking-item'>
-              <a href='#' class='ranking-link'>
-                <div class='ranking-order'>
-                  <span>1位</span>
-                </div>
-                <div class='ranking-img'>
-                  <img src='#' alt=''>
-                </div>
-                <div class='ranking-company-name'>
-                  ハート
+              <a href='#'>
+                <div class='ranking-container line-right-primary'>
+                  <div class='ranking-order'>
+                    <span class='ranking-order-text'>2位</span>
+                  </div>
+                  <div class='ranking-thumbnail-container'>
+                    <img src='./img/ranking2.jpg' alt='ランキング画像' class='ranking-thumbnail'>
+                  </div>
+                  <div class='ranking-title'>
+                    嘘とホームラン
+                  </div>
                 </div>
               </a>
             </li>
             <li class='ranking-item'>
-              <a href='#' class='ranking-link'>
-                <div class='ranking-order'>
-                  <span>1位</span>
-                </div>
-                <div class='ranking-img'>
-                  <img src='#' alt=''>
-                </div>
-                <div class='ranking-company-name'>
-                  アート
-                </div>
-              </a>
-            </li>
-            <li class='ranking-item'>
-              <a href='#' class='ranking-link'>
-                <div class='ranking-order'>
-                  <span>1位</span>
-                </div>
-                <div class='ranking-img'>
-                  <img src='#' alt=''>
-                </div>
-                <div class='ranking-company-name'>
-                  第一引越センター
+              <a href='#'>
+                <div class='ranking-container'>
+                  <div class='ranking-order'>
+                    <span class='ranking-order-text'>3位</span>
+                  </div>
+                  <div class='ranking-thumbnail-container'>
+                    <img src='./img/ranking3.jpg' alt='ランキング画像' class='ranking-thumbnail'>
+                  </div>
+                  <div class='ranking-title'>
+                    ダブルミンツ
+                  </div>
                 </div>
               </a>
             </li>
           </ol>
-          <div class='more-button'>
-            もっと見る
-          </div>
+        <!--もっと見るボタン-->
+        <div class='l-btn'>
+          <a href='' class='btn btn-more'>
+            <span class='btn-text'>
+              もっと見る
+            </span>
+          </a>
         </div>
       </section>
+      <br>
       <!-- 特集 -->
-      <section>
-        <h2 class='heading-title'>特集</h2>
+      <section class='section-base l-container'>
+        <h2 class='heading-title section-base'>特集</h2>
         <div>
           <ul class='media'>
             <li>
-              <a>
+              <a href='#'>
                 <div class='media-container'>
                   <figure class='media-thumbnail-container'>
                     <img src='./img/feature1.jpg' alt='映画の画像' class='media-thumbnail'>
@@ -411,7 +418,7 @@
               </a>
             </li>
             <li>
-              <a>
+              <a href='#'>
                 <div class='media-container'>
                   <figure class='media-thumbnail-container'>
                     <img src='./img/feature2.jpg' alt='映画の画像' class='media-thumbnail'>
@@ -434,7 +441,7 @@
               </a>
             </li>
             <li>
-              <a>
+              <a href='#'>
                 <div class='media-container'>
                   <figure class='media-thumbnail-container'>
                     <img src='./img/feature3.jpg' alt='映画の画像' class='media-thumbnail'>
@@ -467,8 +474,9 @@
           </a>
         </div>
       </section>
+      <br>
       <!-- 記事リスト -->
-      <section>
+      <section class='section-base l-container'>
         <h2 class='heading-title'>
           記事リスト
         </h2>
@@ -536,79 +544,85 @@
           </a>
         </div>
       </section>
+      <br>
       <!-- カテゴリリスト -->
-      <section>
-        <h2 class='heading-title'>
+      <section class='section-base l-container'>
+        <h2 class='heading-title section-base'>
           カテゴリリスト
         </h2>
-        <ul class='category-list'>
-          <li>
-            <a href='#'>
-              <figure class='category-thumbnail-container'>
-                <img src='' alt='' class='category-thumbnail'>
-              </figure>
-              <p class='category-title'>カテゴリ名</p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <figure class='category-thumbnail-container'>
-                <img src='' alt='' class='category-thumbnail'>
-              </figure>
-              <p class='category-title'>カテゴリ名</p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <figure class='category-thumbnail-container'>
-                <img src='' alt='' class='category-thumbnail'>
-              </figure>
-              <p class='category-title'>カテゴリ名</p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <figure class='category-thumbnail-container'>
-                <img src='' alt='' class='category-thumbnail'>
-              </figure>
-              <p class='category-title'>カテゴリ名</p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <figure class='category-thumbnail-container'>
-                <img src='' alt='' class='category-thumbnail'>
-              </figure>
-              <p class='category-title'>カテゴリ名</p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <figure class='category-thumbnail-container'>
-                <img src='' alt='' class='category-thumbnail'>
-              </figure>
-              <p class='category-title'>カテゴリ名</p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <figure class='category-thumbnail-container'>
-                <img src='' alt='' class='category-thumbnail'>
-              </figure>
-              <p class='category-title'>カテゴリ名</p>
-            </a>
-          </li>
-          <li>
-            <a href='#'>
-              <figure class='category-thumbnail-container'>
-                <img src='' alt='' class='category-thumbnail'>
-              </figure>
-              <p class='category-title'>カテゴリ名</p>
-            </a>
-          </li>
-        </ul>
+        <div class='category'>
+          <ul class='category-list'>
+            <li>
+              <a href='#'>
+                <figure class='category-thumbnail-container'>
+                  <img src='./img/cat1.jpg' alt='カテゴリリスト画像' class='category-thumbnail'>
+                </figure>
+                <p class='category-title'>カテゴリ名</p>
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <figure class='category-thumbnail-container'>
+                  <img src='./img/cat2.jpg' alt='カテゴリリスト画像' class='category-thumbnail'>
+                </figure>
+                <p class='category-title'>カテゴリ名</p>
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <figure class='category-thumbnail-container'>
+                  <img src='./img/cat3.jpg' alt='カテゴリリスト画像' class='category-thumbnail'>
+                </figure>
+                <p class='category-title'>カテゴリ名</p>
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <figure class='category-thumbnail-container'>
+                  <img src='./img/cat4.jpg' alt='カテゴリリスト画像' class='category-thumbnail'>
+                </figure>
+                <p class='category-title'>カテゴリ名</p>
+              </a>
+            </li>
+          </ul>
+          <ul class='category-list'>
+            <li>
+              <a href='#'>
+                <figure class='category-thumbnail-container'>
+                  <img src='./img/cat5.jpg' alt='カテゴリリスト画像' class='category-thumbnail'>
+                </figure>
+                <p class='category-title'>カテゴリ名</p>
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <figure class='category-thumbnail-container'>
+                  <img src='./img/cat6.jpg' alt='カテゴリリスト画像' class='category-thumbnail'>
+                </figure>
+                <p class='category-title'>カテゴリ名</p>
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <figure class='category-thumbnail-container'>
+                  <img src='./img/cat7.jpg' alt='カテゴリリスト画像' class='category-thumbnail'>
+                </figure>
+                <p class='category-title'>カテゴリ名</p>
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <figure class='category-thumbnail-container'>
+                  <img src='./img/cat8.jpg' alt='カテゴリリスト画像' class='category-thumbnail'>
+                </figure>
+                <p class='category-title'>カテゴリ名</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
+    <br>
       <!-- フッター -->
     <footer class='footer'>
       <ul class='footer-menu'>
