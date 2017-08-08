@@ -69,7 +69,10 @@
   .nav li {
     border-right: 1px solid #222;
     flex: 1;
-    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #222;
+    padding: 5px;
+    background-color: #f2f5f6;
   }
 
   .nav li a {
@@ -82,6 +85,20 @@
 
   .nav-icon {
     width: 16px;
+  }
+
+  .nav-title {
+    font-size: 16px;
+    color: #eb9920;
+  }
+
+  .breadcrumb-list {
+    display: flex;
+    padding: 8px;
+  }
+
+  .breadcrumb-text {
+    color: #9a9a9a;
   }
 
   .full {
@@ -180,6 +197,8 @@
     padding: 10px;
     display: block;
     font-size: 15px;
+    color: #9a9a9a;
+    text-decoration: underline;
   }
 
   .search-container {
@@ -213,6 +232,26 @@
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
+  }
+
+  .arrow {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    color: #222;
+  }
+
+  .arrow::before {
+    content: none;
+    width: 6px;
+    height: 6px;
+    border: 0;
+    border-top: solid 2px #9a9a9a;
+    border-right: solid 2px #9a9a9a;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: 0;
   }
 
   .form-menu {
